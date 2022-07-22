@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"> 
+    <link rel="stylesheet"  href="css/style.css">
+    <script src="javascript/javascript.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>   
+</head>
+<body>
+    <main>
+       <form>
+           <h1> CADASTRO DO CLIENTE </h1>
+           <h3>
+               <div class="imagem">
+                   <img src="IMG/meta.jpg" width="150" height="150">
+               </div>
+               <p>
+                   Nome <input type="text" required size="20">  
+                   Nome Social <input type="text" size="20">
+                   CPF <input type="text" placeholder="000.000.000-00" maxlength="14" required size="20">
+                   RG <input type="text" required size="20">
+               </p>
+               <p>
+                   Nome da mãe <input type="text" size="20">
+                   Nome do pai <input type="text" size="20"> 
+                   Data de nascimento <input type="date" required size="10">
+                   Estado civil <select required>
+                       <option>Solteiro</option>
+                       <option>Casado</option>
+                       <option>Divorciado</option>
+                       <option>Viúvo</option>
+                       <option>Das mulher</option>
+                       <option>União estável</option>
+                       <option>Outros</option>
+                   </select> 
+               </p>
+               <p>
+                   Naturalidade <input type="text" required size="20">
+                   Nacionalidade <input type="text" required size="20">
+                   Sexo
+                        <input type="radio" name="sexo"> Masculino
+                        <input type="radio" name="sexo"> Feminino
+                        <input type="radio" name="sexo"> dou o cú sim
+               </p>
+               <p>
+                   Endereço <input type="text" required size="15">
+                   Complemento <input type="text" required size="12">
+                   Bairro <input type="text" required size="12">
+                   CEP <input type="text" required size="15">
+                   UF <select id="uf" onchange="trocatema()" required>
+                       <option value="RJ"> RJ </option>
+                       <option value="SP"> SP </option>
+                       <option> MG </option>
+                       <option> ES </option>
+                       <option> AC </option>
+                       <option> RS </option>
+                       <option> BA </option>
+                       </select>
+
+               </p>
+               <p>
+                   Telefone <input type="tel" placeholder="(99)9999-9999" size="20">
+                   Celular <input type="tel" placeholder="(99)9999-999" required size="20">
+                   E-mail <input type="email" required size="20">
+               </p>
+               <p>
+                   Objetivos: <input type="checkbox"  id="turista" onchange="opcionais(350,this.checked)"> Viagens Turisticas
+                             <input type="checkbox"  id="trab" onchange="opcionais(200,this.checked)"> Viagens e trabalho 
+                             <input type="checkbox"  id="internacioanl" onchange="opcionais(1000,this.checked)"> Viagens Internacionais
+               </p>
+               <h4>
+               <p>
+                   <input type="submit" value="Enviar">
+                   <input type="reset"  value="Limpar"
+               </p>
+               <div class="reposta" id="saida">
+                   R$<output id="total">0</output>,00
+               </div>
+               </h4>
+
+           </h3>
+
+       </form>
+   </main>
+   <article></article>
+   <header></header>
+   <footer></footer>
+   <nav></nav>
+</body>
+</html>

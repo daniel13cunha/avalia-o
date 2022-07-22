@@ -1,0 +1,38 @@
+main{
+    margin: auto;
+    width: 80%
+}
+body{
+    background-image:url(../IMG/backgroundhome.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-attachment:fixed
+}
+h1{
+    text-align: center;
+    color:white;
+    background-color:rgba(30, 143, 255, 0.582);
+    width: 80%;
+    margin: 15px auto;
+    margin-bottom: 4px;
+    padding: 0.5em;
+    font-size: 1.5em;
+}
+h3{
+        text-align: left;
+        color:white;
+        background-color:rgba(30, 143, 255, 0.248);
+        width: 100%;
+        margin: 15px auto;
+        margin-bottom: 4px;
+        padding: 0.5em;
+        font-size: 1.5em;
+        text-align: left;
+    }
+    h4{
+        text-align: right;
+        width: 100%;
+        margin: 4px auto;
+        padding: 0.5em;
+        font-size: 1.5em;
+    }
